@@ -12,6 +12,7 @@ plugins {
      * The runnable jar will be found in build/libs/projectname-all.jar
      */
     id("com.github.johnrengelman.shadow") version "7.1.2"
+    //id("org.danilopianini.gradle-java-qa") version "0.43.0"
 
     //id("org.openjfx.javafxplugin") version "0.0.13"
     //id("org.beryx.jlink") version "2.24.1"
@@ -23,7 +24,7 @@ repositories {
 
 dependencies {
     // Suppressions for SpotBugs
-    compileOnly("com.github.spotbugs:spotbugs-annotations:4.7.3")
+    //compileOnly("com.github.spotbugs:spotbugs-annotations:4.7.3")
 
     //implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.fazecast:jSerialComm:2.9.3")
