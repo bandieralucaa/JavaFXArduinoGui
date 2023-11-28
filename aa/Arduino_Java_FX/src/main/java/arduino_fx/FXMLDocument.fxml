@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="arduino_fx.FXMLDocumentController">
+   <children>
+      <TextArea fx:id="txt" layoutX="31.0" layoutY="111.0" prefHeight="156.0" prefWidth="427.0" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="419.0" />
+      <Label layoutX="31.0" layoutY="25.0" text="Porta Seriale " />
+      <ComboBox fx:id="cmb" layoutX="31.0" layoutY="51.0" prefHeight="33.0" prefWidth="190.0" />
+      <Button fx:id="btn" layoutX="230.0" layoutY="51.0" mnemonicParsing="false" onAction="#connetti" prefHeight="33.0" prefWidth="111.0" text="Apri Seriale" />
+      <Button fx:id="btn1" layoutX="347.0" layoutY="51.0" mnemonicParsing="false" onAction="#disconnetti" prefHeight="33.0" prefWidth="111.0" text="Chiudi Seriale" />
+      <Pane fx:id="prg" layoutX="31.0" layoutY="289.0" prefHeight="25.0" prefWidth="435.0" style="-fx-border-width: 1; -fx-border-color: black; -fx-background-color: gray;" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="411.0" />
+      <Label fx:id="lbstato" layoutX="31.0" layoutY="328.0" prefHeight="25.0" prefWidth="276.0" text="Arduino Disconnesso!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnpin8" layoutX="714.0" layoutY="93.0" mnemonicParsing="false" onAction="#onoffpin8" prefHeight="33.0" prefWidth="111.0" text="Uscita 8" AnchorPane.rightAnchor="51.0" />
+      <Button fx:id="btnpin7" layoutX="714.0" layoutY="138.0" mnemonicParsing="false" onAction="#onoffpin7" prefHeight="33.0" prefWidth="111.0" text="Uscita 7" AnchorPane.rightAnchor="51.0" />
+      <Button fx:id="btnpin6" layoutX="714.0" layoutY="185.0" mnemonicParsing="false" onAction="#onoffpin6" prefHeight="33.0" prefWidth="111.0" text="Uscita 6" AnchorPane.rightAnchor="51.0" />
+      <Pane fx:id="p8" layoutX="502.0" layoutY="93.0" prefHeight="33.0" prefWidth="190.0" style="-fx-background-color: gray;" AnchorPane.rightAnchor="184.0" />
+      <Pane fx:id="p7" layoutX="502.0" layoutY="138.0" prefHeight="33.0" prefWidth="190.0" style="-fx-background-color: gray;" AnchorPane.rightAnchor="184.0" />
+      <Pane fx:id="p6" layoutX="502.0" layoutY="185.0" prefHeight="33.0" prefWidth="190.0" style="-fx-background-color: gray;" AnchorPane.rightAnchor="184.0" />
+      <Button fx:id="btnCiclo" layoutX="503.0" layoutY="386.0" mnemonicParsing="false" onAction="#EseguiCiclo" prefHeight="33.0" prefWidth="190.0" text="Esegui" AnchorPane.rightAnchor="184.0" />
+      <Label layoutX="715.0" layoutY="300.0" prefHeight="16.0" prefWidth="111.0" text="SemP (mS)" AnchorPane.rightAnchor="51.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="715.0" layoutY="346.0" prefHeight="16.0" prefWidth="111.0" text="n° volte" AnchorPane.rightAnchor="51.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="spHz" layoutX="503.0" layoutY="294.0" prefHeight="33.0" prefWidth="190.0" AnchorPane.rightAnchor="184.0" />
+      <ComboBox fx:id="spN" layoutX="503.0" layoutY="340.0" prefHeight="33.0" prefWidth="190.0" AnchorPane.rightAnchor="184.0" />
+      <Label layoutX="503.0" layoutY="57.0" prefHeight="21.0" prefWidth="190.0" text="Digital Write" AnchorPane.rightAnchor="184.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="503.0" layoutY="255.0" prefHeight="21.0" prefWidth="190.0" text="Ciclo on/off (pin6)" AnchorPane.rightAnchor="184.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
