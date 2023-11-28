@@ -26,9 +26,13 @@ dependencies {
     compileOnly("com.github.spotbugs:spotbugs-annotations:4.7.3")
 
     //implementation("com.google.code.gson:gson:2.10.1")
-    //implementation("com.fazecast:jSerialComm:2.8.0")
+    implementation("com.fazecast:jSerialComm:2.9.3")
     //implementation 'com.fazecast:jSerialComm:2.6.2'
     //compile(files("libs/jssc-2.8.0.jar"))
+
+    // https://mvnrepository.com/artifact/org.scream3r/jssc
+    implementation("org.scream3r:jssc:2.8.0")
+
 
     // JUnit API and testing engine
     val jUnitVersion = "5.7.1"
